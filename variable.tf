@@ -8,3 +8,5 @@ variable "nameTAGS" {}
 variable "namemasterTAGS" {}
 variable "nameslaveTAGS" {}
 variable "bootstrap" {}
+variable "jenkins-aws-secret-key-id" {}
+variable "jenkins-aws-secret-access-key" {}
