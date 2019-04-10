@@ -8,3 +8,6 @@ variable "nameTAGS" {}
 variable "namemasterTAGS" {}
 variable "nameslaveTAGS" {}
 variable "bootstrap" {}
+variable "deploymentname" {
+    default = "stephen"
+}

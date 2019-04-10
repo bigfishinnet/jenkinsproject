@@ -17,7 +17,7 @@ data "aws_ami" "amz-jenkins-slave" {
 }
 
 resource "aws_key_pair" "my-slave-key" {
- key_name   = "my-slave-key"
+ key_name   = "stephens_slave_key-${var.deploymentname}"
  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
 
