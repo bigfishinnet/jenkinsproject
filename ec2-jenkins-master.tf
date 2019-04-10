@@ -20,6 +20,10 @@ resource "aws_key_pair" "my-master-key" {
  key_name   = "my-master-key"
  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
+output "ip" {
+  value = "${aws_eip.ip.public_ip}"
+}
+
 
 resource "aws_instance" "jenkins-master" {
 
