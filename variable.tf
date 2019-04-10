@@ -8,7 +8,3 @@ variable "nameTAGS" {}
 variable "namemasterTAGS" {}
 variable "nameslaveTAGS" {}
 variable "bootstrap" {}
-
-output "public_ip" {
-  value = "${aws_eip.ip.public_ip}"
-}
