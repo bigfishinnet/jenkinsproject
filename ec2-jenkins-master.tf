@@ -20,6 +20,7 @@ resource "aws_key_pair" "my-master-key" {
  key_name   = "stephens_master_key-${var.deploymentname}"
  public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
+
 resource "aws_instance" "jenkins-master" {
 
   key_name = "${aws_key_pair.my-master-key.key_name}"
